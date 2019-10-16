@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="https://cdn.bootcss.com/toastr.js/latest/css/toastr.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/globle.css">
+  <link rel="stylesheet" href="../css/log.css">
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img id="logo" src="../icon/Logo.svg" alt="">
+    </div>
+    <div class="title">
+      <span style="color: white">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp同步工具 - SyncTool</span>
+    </div>
+    <div class="window-control">
+      <img id="window-refresh" src="../icon/refreshwindow.svg" alt="刷新">
+      <img id="window-mini" src="../icon/miniwindow.svg" alt="最小化">
+      <img id="window-close" src="../icon/closewindow.svg" alt="关闭">
+    </div>
+  </header>
+
+  <aside>
+    <nav id="nav" class="navbar navbar-default nav-stacked">
+      <ul class="nav">
+        <li>
+          <a href="#commonset">公共设置</a>
+        </li>
+        <li>
+          <a href="#proset">项目设置</a>
+        </li>
+        <li>
+          <a href="#log">日志</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <section>
+    <img id="img-run" src="../icon/run.svg" />
+    <div class="section">
+      <div id="commonset">
+        <div>
+          <h4><b>公共设置</b></h4>
+          <hr>
+        </div>
+        <div class="settings">
+          <table>
+            <tr>
+              <td>开始同步时间：</td>
+              <td><input type="datetime-local" value="2015-09-24T13:59:59" /></td>
+            </tr>
+            <tr>
+              <td>同步时间间隔：</td>
+              <td><input type="number" min="0" max="60"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="proset">
+        <div>
+          <h4><b>项目设置</b></h4>
+          <hr>
+        </div>
+      </div>
+
+      <div id="log">
+        <div>
+          <h4><b>日志</b></h4>
+          <hr>
+        </div>
+
+        <div id="log-div">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>在线状态</div>
+    <div><img id="online-status" src="" alt=""></div>
+  </footer>
+
+  <script src="./globle.js"></script>
+</body>
+
+</html>

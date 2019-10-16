@@ -1,0 +1,147 @@
+body,input {
+    margin: 0;
+    -webkit-user-select: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    background-color: #1C212E;
+    -webkit-app-region: drag;
+}
+
+aside {
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 0px;
+    width: 150px;
+}
+
+section {
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 150px;
+    right: 0px;
+}
+
+footer {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+    background-color: #1C212E;
+}
+
+
+img,
+a{
+    -webkit-user-drag: none;
+}
+
+.window-control>img,
+#logo{
+    height: 15px;
+    width: 15px;
+    margin: 15px;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.window-control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav {
+    height: 100%;
+}
+
+.nav>li>a {
+    color: black;
+}
+
+.section {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+.section>div {
+    position: relative;
+    height: 100%;
+}
+
+.section>div>div>h4 {
+    margin: 0px;
+    padding: 10px;
+}
+
+.section>div>div>hr {
+    margin: 0px;
+    height: 1px;
+    background-color: #E6E6E6;
+}
+
+.section::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.section::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    background-color:#1C212E;
+}
+
+#img-run{
+    position: fixed;
+    top: 20px;
+    right: 5px;
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+    cursor: pointer;
+    z-index: 9999;
+    -webkit-app-region: no-drag;
+}
+
+.settings{
+    margin: 20px;
+}
+
+.settings>table>tbody>tr>td{
+    height: 50px;
+}
+
+footer{
+    color: white;
+    padding:5px;
+}
+
+footer>div{
+    display: inline;
+}
+
+footer>div>img{
+    height: 20px;
+    widows: 20px;
+}

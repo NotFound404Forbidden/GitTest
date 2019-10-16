@@ -1,0 +1,27 @@
+{
+  "name": "typeorm-electron-javascript-example",
+  "version": "0.0.1",
+  "main": "src/main.js",
+  "description": "",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "Umed Khudoiberdiev",
+    "email": "pleerock.me@gmail.com"
+  },
+  "dependencies": {
+    "electron": "^1.8.4",
+    "iconv-lite": "^0.5.0",
+    "mqtt": "^3.0.0",
+    "request": "^2.88.0",
+    "sequelize": "^5.19.6",
+    "tedious": "^6.4.0",
+    "toastr": "^2.1.4"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.8.1"
+  },
+  "scripts": {
+    "start": "electron ."
+  }
+}
